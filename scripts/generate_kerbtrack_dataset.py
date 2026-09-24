@@ -22,11 +22,11 @@ OUTPUT_DIR = Path(
     r"\outputs\synthetic_dataset"
 )
 
-NUM_IMAGES = 500
-WIDTH, HEIGHT = 1024, 1024
+NUM_IMAGES = 5000
+WIDTH, HEIGHT = 1024, 720
 NUM_INFERENCE_STEPS = 28
 GUIDANCE_SCALE = 3.5
-LORA_SCALES = [0.4, 0.6, 0.8]
+LORA_SCALES = [0.2, 0.3, 0.4]
 
 WASTE = [
     "a discarded sofa", "a damaged sofa", "an old fabric couch",
@@ -161,7 +161,7 @@ def main():
                 generator=generator,
             ).images[0]
 
-            name = f"kerbtrack_{i:05d}_lora_{scale:.1f}_seed_{seed}.png"
+            name = f"kerbtrack-syn_{i:05d}.png"
             image.save(out / name)
 
             meta = {
