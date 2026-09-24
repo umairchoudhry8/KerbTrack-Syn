@@ -1,0 +1,15 @@
+# Install a CUDA-compatible PyTorch build separately if needed.
+torch
+torchvision
+transformers
+accelerate
+datasets
+diffusers
+safetensors
+qwen-vl-utils
+Pillow
+numpy
+pandas
+bitsandbytes
+tensorboard
+tqdm
