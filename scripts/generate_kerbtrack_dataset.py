@@ -161,7 +161,7 @@ def main():
                 generator=generator,
             ).images[0]
 
-            name = f"kerbtrack-syn_{i:05d}.png"
+            name = f"kerbtrack-synthetic_{i:05d}.png"
             image.save(out / name)
 
             meta = {
