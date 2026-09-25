@@ -1,15 +1,25 @@
-# Install a CUDA-compatible PyTorch build separately if needed.
-torch
-torchvision
-transformers
-accelerate
-datasets
-diffusers
-safetensors
-qwen-vl-utils
-Pillow
-numpy
-pandas
-bitsandbytes
-tensorboard
-tqdm
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# Deep Learning
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
+
+# Generative AI / Hugging Face
+diffusers==0.41.0.dev0
+transformers==5.16.1
+peft==0.20.0
+accelerate==1.14.0
+safetensors==0.8.0
+huggingface-hub==1.29.0
+
+# Image and Data Processing
+Pillow==12.3.0
+numpy==2.2.6
+pandas==2.3.3
+PyYAML==6.0.3
+
+# Utilities
+requests==2.34.2
+tqdm==4.70.0
+Jinja2==3.1.6
